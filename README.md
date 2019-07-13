@@ -1,5 +1,5 @@
 <ul>
-#<li>[Minimo](https://no4good.github.io/Minimo)</li>
+[Minimo](https://no4good.github.io/Minimo)
 <li>[Dom](https://no4good.github.io/dom)</li>
 <li>[POE](https://no4good.github.io/poe)</li>
 <li>[Popup](https://no4good.github.io/popup)</li>
