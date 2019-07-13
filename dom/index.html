@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<style type="text/css">
+    div,
+    h1 {
+        width: 50%;
+        margin: auto;
+        border: 2px solid black;
+        margin-bottom: 5px;
+        padding: 5px;
+    }
+
+    .btnfirstTen {
+        visibility: hidden;
+        position: fixed;
+        bottom: 100px;
+        right: 50px;
+
+    }
+
+    button {
+        background-color: rgb(185, 180, 255);
+        border-radius: 20px;
+        outline: none;
+        margin-top: 5px;
+        border: 1px solid black;
+        font-size: 15px;
+        pointer-events: pointer;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background: rgb(132, 150, 252)
+    }
+
+    .btnfirstTen {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+    }
+</style>
+
+<head>
+    <script src="test.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Posts
+        <button onclick="sortAsc()">Sort by data: min to max</button>
+        <button onclick="sortDesc()">Sort by data max to min</button>
+    </h1>
+
+</body>
+
+</html>
