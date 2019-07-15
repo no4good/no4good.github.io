@@ -56,10 +56,6 @@ function NextTen() {
 }
 
 
-
-
-
-
 window.onscroll = function () {
     let elpos = document.getElementsByTagName("div").length - 1;
     let ellast = document.getElementsByTagName("div")[elpos];
@@ -85,9 +81,15 @@ function FirstTen() {
 }
 
 function removeButton(btn) {
-    arr = arr.filter(post => post.createdAt !== btn.parentNode.getElementsByTagName('span')[0].innerHTML);
     ((btn.parentNode).parentNode).removeChild(btn.parentNode);
-    count -= 1;
+    if (document.getElementsByTagName('div').length + 1 !== arr.length) {
+        console.log("sds");
+        let div = document.body.appendChild(document.createElement("div"));
+        div.innerHTML = `<img src=${arr[count]["img"]}> <br> ${arr[count]["title"]} <br> 
+   ${arr[count]["description"]} <br>  Tags:${arr[count]["tags"]} <br>  <span>${arr[count]["createdAt"]}</span> 
+    <br> <button  onclick="removeButton(this)">Delete post</button>`;
+    }
+    arr = arr.filter(post => post.createdAt !== btn.parentNode.getElementsByTagName('span')[0].innerHTML);
 }
 
 function sortAsc() {
@@ -121,3 +123,4 @@ function sortDesc() {
          <button  onclick="removeButton(this)">Delete post</button>`;
     }
 }
+//sdssd
